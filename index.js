@@ -182,6 +182,7 @@ S3Storage.prototype._handleFile = function (req, file, cb) {
         size: currentSize,
         bucket: opts.bucket,
         key: opts.key,
+        filename: opts.key,
         acl: opts.acl,
         contentType: opts.contentType,
         contentDisposition: opts.contentDisposition,
